@@ -1,0 +1,347 @@
+.workprocess-section {
+    padding: 80px 50px;
+    background-color: #efefef;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workprocess-wrapper {
+    max-width: 1320px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.workprocess-left {
+    width: 529px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: start;
+}
+
+.workprocess-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.workprocess-description {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.workprocess-right {
+    width: 100%;
+}
+
+.workprocess-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.workprocess-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 16px;
+    text-align: start;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.workprocess-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.card-description {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+@media (min-width: 1400px) {
+    .workprocess-wrapper {
+        gap: 100px;
+    }
+
+    .workprocess-title {
+        font-size: 52px;
+    }
+
+    .workprocess-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 1025px) {
+    .workprocess-section {
+        padding: 70px 35px;
+    }
+
+    .workprocess-wrapper {
+        gap: 70px;
+    }
+
+    .workprocess-title {
+        font-size: 44px;
+    }
+
+    .workprocess-description {
+        font-size: 14px;
+    }
+
+    .workprocess-grid {
+        gap: 24px;
+    }
+
+    .workprocess-card {
+        padding: 32px 26px;
+    }
+
+    .card-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 38px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .workprocess-section {
+        padding: 60px 25px;
+        min-height: auto;
+    }
+
+    .workprocess-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .workprocess-left {
+        gap: 20px;
+    }
+
+    .workprocess-title {
+        font-size: 36px;
+    }
+
+    .workprocess-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .workprocess-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .workprocess-card {
+        padding: 28px 22px;
+    }
+
+    .card-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 36px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .workprocess-section {
+        padding: 50px 20px;
+        min-height: auto;
+    }
+
+    .workprocess-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .workprocess-left {
+        gap: 18px;
+    }
+
+    .workprocess-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .workprocess-description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .workprocess-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .workprocess-card {
+        padding: 24px 18px;
+        gap: 12px;
+    }
+
+    .card-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 32px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-description {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .workprocess-section {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .workprocess-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .workprocess-left {
+        gap: 16px;
+    }
+
+    .workprocess-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .workprocess-description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .workprocess-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .workprocess-card {
+        padding: 20px 15px;
+        gap: 12px;
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .card-description {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 319px) {
+    .workprocess-section {
+        padding: 30px 10px;
+        min-height: auto;
+    }
+
+    .workprocess-wrapper {
+        gap: 20px;
+    }
+
+    .workprocess-left {
+        gap: 12px;
+    }
+
+    .workprocess-title {
+        font-size: 20px;
+    }
+
+    .workprocess-description {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .workprocess-grid {
+        gap: 12px;
+    }
+
+    .workprocess-card {
+        padding: 16px 12px;
+        gap: 10px;
+    }
+
+    .card-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-description {
+        font-size: 10px;
+    }
+}
