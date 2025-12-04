@@ -17,8 +17,6 @@
 }
 
 .workprocess-left {
-    width: 529px;
-    height: 240px;
     display: flex;
     flex-direction: column;
     gap: 25px;
